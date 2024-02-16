@@ -2,9 +2,10 @@ import React from 'react';
 import Main from '../layouts/main/Main';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from '../documents/home/Home';
-import Error from './Error';
+import Error from '../documents/error/Error';
 import Login from '../accounts/login/Login';
 import RegisterForm from '../accounts/register/RegisterForm';
+import Profile from '../accounts/profile/Profile';
 
 
 const Router = () => {
@@ -25,7 +26,10 @@ const Router = () => {
                     path:'/register',
                     element:<RegisterForm></RegisterForm>
                 },
-
+{
+    path:'/profile',
+    element:<Profile></Profile>
+}
                 
             ],
          
